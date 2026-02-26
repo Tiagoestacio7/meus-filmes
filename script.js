@@ -6,8 +6,30 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', {
     }
 })
     .then(function(response){
-    return response.json();
+        return response.json();
     })
     .then(function(data){
-    console.log(data.results);
+        console.log(data.results)
+
+        const container = document.getElementById('featureMovies');
+        container.innerHTML = ``;
+
+        const cardMovies = data.results.map(function (i){
+            const card = `
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="movie-card">
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/${i.poster_path}" class="card-img-top" alt="${i.original_title}">
+                    <div class="card-body movie-info">
+                    <div class="movie-title">${i.original_title}</div>
+                    <div class="movie-date">${i.release_date}</div>
+            </div>
+        </div>`
+
+         console.log(card)
+
+         container.innerHTML += card;
+        })
+
+       
+
     })
