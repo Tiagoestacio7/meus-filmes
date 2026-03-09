@@ -2,9 +2,9 @@ document.getElementById("botaoPesquisar").addEventListener("click", pesquisar);
 
 function pesquisar() {
 
-    const query = document.getElementById("searchInput").value;
+    const busca = document.getElementById("searchInput").value;
 
-    fetch(`https://api.themoviedb.org/3/search/movie?query=${query}&language=pt-BR&page=1`, {
+    fetch(`https://api.themoviedb.org/3/search/movie?query=${busca}&language=pt-BR&page=1`, {
         method: 'GET',
         headers: {
             accept: 'application/json',
