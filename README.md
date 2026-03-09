@@ -5,7 +5,7 @@ Projeto de estudo desenvolvido para praticar consumo de APIs e manipulação do 
 A aplicação exibe um catálogo de filmes e séries e também permite pesquisar títulos através da API do The Movie Database (TMDB).
 
 🔗 **Acesse o projeto:**  
-https://seuusuario.github.io/nome-do-repositorio
+https://tiagoestacio7.github.io/meus-filmes/
 
 ---
 
