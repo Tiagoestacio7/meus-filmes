@@ -2,7 +2,7 @@ document.getElementById("botaoPesquisar").addEventListener("click", pesquisar);
 
 function pesquisar() {
 
-    const busca = document.getElementById("searchInput").value;
+    const busca = document.getElementById("entradaBusca").value;
 
     fetch(`https://api.themoviedb.org/3/search/movie?query=${busca}&language=pt-BR&page=1`, {
         method: 'GET',
